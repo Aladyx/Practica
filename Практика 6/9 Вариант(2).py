@@ -8,6 +8,6 @@ a.clear()
 a.extend(b)
 b.clear()
 b.extend(y)
-print("Исходный массив А:" , a)
-print("Исходный массив B:", b)
+print("Преобразованный массив А:" , a)
+print("Преобразованный массив B:", b)
     
