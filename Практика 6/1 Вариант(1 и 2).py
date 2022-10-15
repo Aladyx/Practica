@@ -4,7 +4,7 @@ x = []
 for i in range(N):
     print("Введите", i, "элементы массива: ")
     x.append(int(input()))
-print("Максимальный эелемент: " ,max(x))   
+print("Максимальный элемент: " ,max(x))   
 x.reverse()
 print("Массив в обратном порядке:", x)
 z = sum(x)/len(x)
