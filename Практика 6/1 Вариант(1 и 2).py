@@ -8,7 +8,9 @@ print("Максимальный элемент: " ,max(x))
 x.reverse()
 print("Массив в обратном порядке:", x)
 z = sum(x)/len(x)
-x[0] = z
+for i in range(N):
+    if x[i] == 0:
+        x[i] = z
 print("Замена нулевого элемента массива:", x)
 
     
