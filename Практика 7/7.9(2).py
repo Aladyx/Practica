@@ -1,0 +1,37 @@
+import math
+
+def x(z, y, u):
+  pro1 = math.prod(z)
+  ar1 = sum(z)/len(z)
+  pro2 = math.prod(y)
+  ar2 = sum(y)/len(y)
+  pro3 = math.prod(u)
+  ar3 = sum(u)/len(u)
+  Res1 = print("Произведение и среднеарефметическое значение 1-ого массива: ",pro1,",", ar1,";",
+      "Произведение и среднеарефметическое значение 2-ого массива: ",pro2,",", ar2,";",
+      "Произведение и среднеарефметическое значение 3-ого массива: ",pro3,",", ar3 )
+  return Res1
+
+N1 = int(input("Введите длину первого массива: "))
+
+N2 = int(input("Введите длину второго массива: "))
+
+N3 = int(input("Введите длину третьего массива: "))
+
+z = []
+y = []
+u = []
+
+for i in range(N1):
+    print("Введите", i, "элементы 1-ого массива: ")
+    z.append(int(input()))
+    
+for i in range(N2):
+    print("Введите", i, "элементы 2-ого массива: ")
+    y.append(int(input()))
+    
+for i in range(N3):
+    print("Введите", i, "элементы 3-ого массива: ")
+    u.append(int(input()))    
+
+print(x(z, y, u))
